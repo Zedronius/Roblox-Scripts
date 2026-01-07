@@ -28,7 +28,7 @@ function ForceTeleport.GTP()
 
 	local rcp = RaycastParams.new()
 	rcp.FilterDescendantsInstances = {Character, Camera}
-	rcp.FilterType = Enum.RaycastFilterType.Blacklist
+	rcp.FilterType = Enum.RaycastFilterType.Exclude
 
 	local rcr = Workspace:Raycast(
 		Camera.CFrame.Position,
